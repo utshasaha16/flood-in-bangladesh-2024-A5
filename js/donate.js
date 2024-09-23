@@ -58,5 +58,9 @@ document.getElementById('input-btn-three')
         document.getElementById('main-balance').innerText = mainBalance;
 
     })
-
+// click blog button and go to another page
+document.getElementById('home-button')
+    .addEventListener('click', function(){
+        window.location.href = "./index.html"
+})
     
