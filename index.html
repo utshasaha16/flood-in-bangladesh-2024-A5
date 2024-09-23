@@ -52,8 +52,8 @@
               class="flex items-center justify-center gap-2 text-xl font-medium"
             >
               <img src="./assets/coin.png" alt="" />
-              <span>****</span>
-              <span>BDT</span>
+              <span id="main-balance">100000</span>
+             <p>BDT</p>
             </div>
           </div>
         </nav>
@@ -84,11 +84,11 @@
           <!-- content container -->
           <div class="space-y-5">
             <!-- button div -->
-            <button class="btn flex items-center gap-3 text-sm font-normal" disabled>
+            <div class="bg-gray-100 w-28 h-9 rounded-md flex items-center gap-1 text-sm font-normal">
               <img src="./assets/coin.png" alt="" />
-              <span>****</span>
+              <span id="input-one-total-amount">10000</span>
               <p>BDT</p>
-            </button>
+            </div>
 
             <h3 class="font-bold text-xl">
               Donate for Flood at Noakhali, Bangladesh
@@ -105,12 +105,13 @@
             </p>
 
             <div class="space-y-4">
-              <input
-                type="text"
+              <input id="input-field-one"
+              type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered input-md w-full"
               />
-              <button class="btn bg-primary w-full" disabled>Donate Now</button>
+              <p id="error-input-field-one" class="text-red-500 font-semibold text-sm hidden">Invalid amount</p>
+              <button id="input-btn-one" class="btn bg-primary w-full">Donate Now</button>
             </div>
           </div>
         </div>
@@ -123,12 +124,11 @@
           <!-- content container -->
           <div class="space-y-5">
             <!-- button div -->
-            <button class="btn flex items-center gap-3 text-sm font-normal" disabled>
+            <div class="bg-gray-100 w-28 h-9 rounded-md flex items-center gap-1 text-sm font-normal">
               <img src="./assets/coin.png" alt="" />
-              <span>****</span>
+              <span id="input-two-total-amount">20000</span>
               <p>BDT</p>
-            </button>
-
+            </div>
             <h3 class="font-bold text-xl">
             Donate for Flood Relief in Feni,Bangladesh
             </h3>
@@ -137,12 +137,13 @@
             </p>
 
             <div class="space-y-4">
-              <input
+              <input id="input-field-two"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered input-md w-full"
               />
-              <button class="btn bg-primary w-full" disabled>Donate Now</button>
+              <p id="error-input-field-two" class="text-red-500 font-semibold text-sm hidden">Invalid amount</p>
+              <button id="input-btn-two" class="btn bg-primary w-full">Donate Now</button>
             </div>
           </div>
         </div>
@@ -155,12 +156,11 @@
           <!-- content container -->
           <div class="space-y-6">
             <!-- button div -->
-            <button class="btn flex items-center gap-3 text-sm font-normal" disabled>
+            <div class="bg-gray-100 w-28 h-9 rounded-md flex items-center gap-1 text-sm font-normal">
               <img src="./assets/coin.png" alt="" />
-              <span>****</span>
+              <span id="card-three-total-amount">30000</span>
               <p>BDT</p>
-            </button>
-
+            </div>
             <h3 class="font-bold text-xl">
                 Aid for Injured in the Quota Movement
             </h3>
@@ -170,12 +170,13 @@
             </p>
 
             <div class="space-y-4">
-              <input
+              <input id="input-field-three"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered input-md w-full"
               />
-              <button class="btn bg-primary w-full" disabled>Donate Now</button>
+              <p id="error-input-field-three" class="text-red-500 font-semibold text-sm hidden">Invalid amount</p>
+              <button id="input-btn-three" class="btn bg-primary w-full">Donate Now</button>
             </div>
           </div>
         </div>
@@ -184,5 +185,7 @@
     <!-- started footer -->
     <footer>
     </footer>
+    <script src="/js/utilitys.js"></script>
+    <script src="/js/donate.js"></script>
   </body>
 </html>
